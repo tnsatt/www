@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Đăng nhập</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Thien Nguyen"/>
+	<meta name="description" content="Website linh tinh"/>
+	<meta name"keyword" content="Thien Nguyen"/>
+	<meta name="viewport" content="width=max-width, initial=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="login.css"/>
+	<script src="javas.js"></script>
+</head>
+<body>
+<div class="text">
+<marquee direction="right" scrollamount="20">Hello World!</marquee>
+<marquee direction="right" scrollamount="10">Hello World!</marquee>
+<marquee direction="right" scrollamount="30"><div class="doge"></div></marquee>
+<marquee direction="right" scrollamount="15">Hello World!</marquee>
+<marquee direction="right" scrollamount="8">Hello World!</marquee>
+<marquee direction="right" scrollamount="40">Hello World!</marquee>
+<marquee direction="right" scrollamount="17">Hello World!</marquee>
+<marquee direction="right" scrollamount="13">Hello World!</marquee>
+<marquee direction="right" scrollamount="26">Hello World!</marquee>
+<marquee direction="right" scrollamount="9">Hello World!</marquee>
+</div>
+
+
+<div class="login">
+	<div class="avatar"></div>
+	<div class="form">
+		<div style="text-align: center; font-size:25px;">Login</div>
+	<form action="login.php" method="post">
+	<div  class="form-group">
+		<label>Username</label>
+		<input type="text" class="form-control" value="" placeholder="Enter username" name="username">
+	</div>
+	<div  class="form-group">
+		<label>Password</label>
+		<input type="password" class="form-control" value="" placeholder="Enter password" name="password">
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox"> Remember me</label>
+	</div>
+	<input class="submit" type="submit" value="Submit" name="submit">
+	</form>
+	</div>
+</div>
+	<div id="showuser" style="display: none;">Ten dang nhap phai tren 6 ky tu</div>
+	<div id="showpass" style="display: none;">Mat khau phai gom chu thuong, chu hoa va so</div>
+
+
+<div class="contact">
+<div class="top">Contact</div>
+<form id="noidung" style="display:none">
+	<div class="form-group">
+	<strong>Tên bạn:</strong>
+	<input type="text" class="form-control">
+	</div>
+	<div class="form-group">
+	<strong>Nội dung:</strong>
+	<textarea class="form-control" rows="5" style="resize:none;"></textarea>
+	</div>
+	<input type="submit" class="btn btn-primary">
+</form>
+</div>
+
+<div id="loadbar"></div>
+
+
+
+
+
+
+
+</body>
+</html>

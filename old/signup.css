@@ -1,0 +1,129 @@
+body{
+	font-family: arial;
+}
+.text{
+	z-index: -1;
+	position: fixed;
+	top: 1%;
+	width: 100%;
+	height: 100%;
+
+}
+.text marquee{
+	line-height: 80px;
+}
+.signup{
+	width: 400px;
+	height: 560px;
+	z-index: 1;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+	margin-top: 7%;
+	left: 50%;
+	margin-left: -200px;
+	
+}
+.avatar{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: auto;
+	z-index: 1;
+	background: url('http://share.moltendorf.net/Pictures/Avatar/Doge/Doge-Lovers.png')  center;
+	background-size: cover;
+	left: 150px;
+	top: -60px;
+}
+.doge{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: url('http://share.moltendorf.net/Pictures/Avatar/Doge/Doge-Lovers.png')  center;
+	background-size: cover;
+}
+.form{
+	width: 100%;
+	font-weight: bold;
+	margin: 50px 0 0 0;
+	position: absolute;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+#username, #password{
+
+	width: 100%;
+	padding: 16px 16px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+.remember{
+	margin: 5px 0;
+}
+.submit{
+	color: white;
+	width: 100%;
+	padding: 16px 1px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: 16px 0;
+	background-color: #4CAF50;
+}
+.submit:hover{
+	background-color: #45a049;
+}
+.contact{
+	position: fixed;
+	bottom: 0;
+	right: 30px;
+	width: 250px;
+	z-index: 1;
+	
+}
+.top{
+	background-color: #008CBA;
+	text-align: left;
+	color: white;
+	padding: 7px;
+    border-radius: 4px 4px 0 0;
+}
+#noidung{
+	background-color: white;
+	padding: 5px;
+	box-sizing: border-box;
+	border-left: 1px solid #008CBA;
+    border-right: 1px solid #008CBA;
+}
+#showuser:before, #showpass:before{
+    content: "";
+    background-color: #4CAF50; 
+	border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 4px;
+
+}
+#showuser, #showpass{
+	text-align: center;
+	margin: 10px 0;
+    font-weight: bold;
+}
+#loadbar{
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: yellow;
+	height: 3px;
+	width: 0;
+	animation-name: load;
+	animation-duration: 0.5s;
+	animation-play-state: paused;
+}
+@keyframes load{
+	100%{width: 100%;}
+}
